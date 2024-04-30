@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace practicaUno.Models
 {
-    internal class Vino: Bebida
+    internal class Vino : Bebida
     {
-
+        public Vino(int Cantidad, string Nombre = "Vino")
+            : base(Nombre, Cantidad)
+        {
+        }
     }
 }
