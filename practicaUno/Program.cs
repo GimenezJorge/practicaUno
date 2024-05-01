@@ -46,5 +46,14 @@ class Program
         Console.WriteLine(bebida2.cantidad);
 
 
+        mostrarRecomendacion(vinoUno);
+        Cerveza cerveza = new Cerveza();
+        mostrarRecomendacion(cerveza);
+        Console.ReadKey();        
+    }
+
+    static void mostrarRecomendacion(IBebidaAlcoholica bebidaAlcoholica)
+    {
+        bebidaAlcoholica.maxRecomendado();
     }
 }

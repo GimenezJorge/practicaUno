@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace practicaUno.Models
 {
-    internal class Vino : Bebida,IBebidaAlcoholica
+    internal class Cerveza : Bebida, IBebidaAlcoholica
     {
-        public Vino(int Cantidad, string Nombre = "Vino")
+        public Cerveza(int Cantidad, string Nombre = "Vino")
             : base(Nombre, Cantidad)
         {
         }
+
+        public Cerveza() { }
 
         public int alcohol { get; set; }
 
         public void maxRecomendado()
         {
-            Console.WriteLine("El maximo permitido de vinos es dos botellas por persona");
+            Console.WriteLine("El maximo permitido de birras es cinco latas por persona");
         }
     }
+
 }
